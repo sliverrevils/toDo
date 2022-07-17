@@ -1,0 +1,193 @@
+.list{
+    padding: 30px;
+    background-color: rgb(209, 209, 209);
+   position: relative;
+}
+.listBlack{
+    padding: 30px;
+    background-color: rgb(52, 52, 52);
+   position: relative;
+}
+
+.item{
+    transition: all 100ms linear;
+    
+    padding: 5px;
+    margin: 5px 0;
+    display: flex;   
+
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0,.4);
+    background-color: whitesmoke;
+}
+.itemBlack{
+    transition: all 100ms linear;
+    
+    padding: 5px;
+    margin: 5px 0;
+    display: flex;   
+
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0,.4);
+    background-color: rgb(1, 1, 1);
+
+}
+
+.item:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0,.4);
+    background-color: white;
+}
+
+.midBlock{
+    display: flex;
+    
+    flex-direction: column;
+    flex: 1 1 auto;
+
+    /* border: 1px solid black; */
+    border-radius: 0 20px 20px 0;
+    
+
+}
+
+.index{
+    /* background-color: rgba(0, 0, 0,.3); */
+    color:rgb(132, 131, 131);
+
+    border-radius: 20px 0 0 20px;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   width:30px;
+    padding: 5px;
+}
+
+.task{
+    /* background-color: rgba(0, 0, 0,.3); */
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 27px;
+    border-radius: 0 10px 0 0;
+
+}
+
+.time{
+
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 13px;
+font-weight: 500;
+display: flex;
+
+display: flex;
+justify-content: space-between;
+/* background-color: rgba(0, 0, 0,.3); */
+color: rgb(131, 132, 133);
+
+border-radius: 0 0 10px 0;
+
+
+}
+
+.close{
+    /* background-color: rgba(0, 0, 0,.3); */
+
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+
+    font-size: 30px;
+    color: rgb(189, 188, 188);
+}
+.close:hover{
+    color: rgb(144, 144, 144);
+    animation: closeAnim 300ms linear infinite;
+    box-sizing: 3px 3px 3px black;
+    cursor: pointer;
+}
+
+.alarm{
+    transform: scale(230%) translateX(-10px) translateY(-10px);
+    color:green;
+    transition: transform 300ms linear;
+}
+
+.alarmOn{
+    animation: alert 300ms linear infinite; 
+}
+.finishSpin{
+    display: inline-block;
+    animation: spin 20s linear infinite  ;
+    transform-origin: center; 
+    margin: 0 20px;
+    cursor: pointer;
+    user-select: none;
+    float: left;
+}
+.finish{
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    float: left;
+}
+
+.clearListBtn{
+display: block;
+position: absolute;
+z-index: 10;
+top: 3px;
+right: 10px;
+
+color: brown;
+font-size: 2rem;
+}
+
+
+@keyframes alert{
+    0%{
+        transform:scale(230%) translateX(-10px) translateY(-10px) rotate(0deg) scale(100%);
+    }
+    25%{
+        transform:scale(230%) translateX(-10px) translateY(-10px) rotate(-5deg) scale(130%);
+    }
+    50%{
+        transform:scale(230%) translateX(-10px) translateY(-10px) rotate(0deg)scale(90%);
+    }
+    75%{
+        transform:scale(230%) translateX(-10px) translateY(-10px) rotate(5deg)scale(120%);
+    }
+    100%{
+        transform:scale(230%) translateX(-10px) translateY(-10px) rotate(0deg) scale(100%);
+    }
+
+}
+
+@keyframes closeAnim {
+    0%{
+        transform: (rotate(-5deg));
+    }
+    100%{
+        transform: (rotate(5deg));
+    }
+    
+}
+
+@keyframes spin{
+    0%{
+        transform:  translateY(3px) rotate(0deg);
+        
+       
+    }
+    100%{
+        transform: translateY(3px) rotate(360deg);
+        
+    }
+}

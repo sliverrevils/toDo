@@ -1,0 +1,33 @@
+.main{
+background-color:whitesmoke;
+text-align: center;
+width: 600px;
+position: relative;
+border-radius: 10px;
+}
+.mainDark{
+    background-color:rgb(31, 31, 31);
+    text-align: center;
+    width: 600px;
+    position: relative;
+    color:whitesmoke;
+}
+
+.sound{
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    user-select: none;
+    cursor: pointer;
+}
+.theme{
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    
+    user-select: none;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.input{
+font-size: 30px;
+text-align: center;
+border-radius: 5px;
+
+}
+.inputBlack{
+    background-color: rgb(104, 104, 104);
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.addTask{
+    font-size: 28px;
+    font-weight: 600;
+
+    box-shadow: 3px 3px 5px black;
+    margin: 0 10px;
+    color: aliceblue;
+    
+}
+.addTask>svg{
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.addTask:hover{
+    box-shadow: 1px 1px 5px black;
+}
+.addTaskBlack{
+    font-size: 28px;
+    font-weight: 600;
+
+    box-shadow: 3px 3px 5px black;
+    margin: 0 10px;
+    background-color: rgb(96, 95, 95);
+    margin: 0 10px;
+    color:wheat;
+    border-radius: 5px;
+}
+
+.dateInput{
+    width: 220px;
+    height: 30px;
+    font-size: 20px;
+    margin: 5px auto;
+    color: rgb(0, 0, 0);
+}
+.dateInputBlack{
+    width: 220px;
+    height: 20px;
+    font-size: 20px;
+    background-color: rgb(191, 188, 188);
+    color: rgb(106, 106, 106);
+    border: 0;
+}
+
+.clearDateBtn{
+    margin:5px;
+    font-size: 20px;
+    border: 0;
+}
+.clearDateBtnBlack{
+    margin:5px;
+    font-size: 20px;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    opacity: .3;
+}
+
